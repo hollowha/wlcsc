@@ -4,146 +4,34 @@
     <title>iphone 12 test</title>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
-    <style>
-		*{
-			font-family: Helvetica , "微軟正黑體" ;
-			letter-spacing: 0.5px;
-			line-height: 35px;
-		}
-        html,body{margin:0;padding:0}
-		h1{
-			font-size: 80px;
-			font-weight: 750;
-			line-height: 0px;
-		}
-		h2{font-size: 20px;font-weight: 750;}
-		h3{font-size: 20px;font-weight: 750;}
-		h4{font-size: 15px;}
-		h5{
-			line-height: 5px;
-			color: slategrey ;
-			font-size: 17px;
-			display: block;
-			margin:15px 0px;
-		}
-		h6{font-size: 15px;}
-        .whole{width:100%;}
-        .head{
-            height:50px;
-            width:100%;
-            background-color:#333333;
-			position: fixed;
-        }
-        .flex{
-             width:10%;
-             height: 100%;
-             float: left;       
-             display: flex;
-             justify-content: center;
-             align-items: center;
-        }
-		.apple{height: 100%;}
-		.search{height: 100%;}
-		.shop{height: 100%;}
-		.logo{width: 0px;height: 0px;position: absolute;}
-		.headfont{width: 100%;color: white;font-size: 13px;font-weight: 100;}
-        .topic{
-			position: fixed;
-			top:50px;
-			left: 0px;
-			height:50px;
-            width:100%;
-            background-color: white;
-			opacity: 0.7;
-			border: 0.5px #BFBFBF solid;
-		}
-        .topicfont1{
-			width:25%;
-             height: 100%;
-             float: left;
-             display: flex;
-             justify-content: center;
-             align-items: center;
-		}
-        .topicfont2{width:10%;
-             height: 100%;
-             float: left;
-             display: flex;
-             justify-content: center;
-             align-items: center;}
-		.bluebox{
-			width: 60px;height: 30px;border-radius: 25px;background-color:blue;
-			display: flex;
-             justify-content: center;
-             align-items: center;
-		}
-		.topicwhite{width: 45%;
-			        height: 100%;
-			        float: left;
-		            display: flex;
-		            justify-content: center;
-	                align-items: center;}
-		.body{width: 100%;}
-		.title{width: 100%;
-   			   background-color:#F2F2F2;
-               display: flex;
-               justify-content: center;
-               align-items: center;   
-	           flex-direction: column;}
-		.title1{width: 75%;}
-		.title2{width: 60%; display: flex;
-                justify-content: center;
-                align-items: center;
-			    text-align: center;
-			    flex-direction: column;
-		}
-		.title3{width: 100%; display: flex;
-				justify-content: center;
-				align-items: center;
-				text-align: center;}
-		@media screen and (max-width:850px){
-			.logo{top:0px;left: 0px;width: 50px; height: 50px;; position: fixed;}
-			.headfont{width: 50%;color: white;font-size: 0px;font-weight: 100;	}
-			.apple{top:0px;left:45%;width: 50px; height: 50px; position: fixed;}
-			.search{height: 0%;}
-			.shop{height: 100%;}
-			.topicfont2{position: fixed;top:50px;right:25px;width:50px;height: 50px;}
-			.title1{width: 100%;margin:40px;}
-			.title2{width: 80%; text-align:left;display: block;}
-			.title3{width: 100%; display: flex;
-					justify-content:flex-start;
-					align-items:flex-start;
-					text-align:left;
-					flex-direction: column;
-			}
-			h1{font-size: 50px;line-height: 20px;}
-			h2{line-height: 30px;}
-			h3{font-size: 14px;font-weight: 100;}
-			h6{font-size: 0px;}
-		}
-    </style>    
+	<link rel="stylesheet" href="css.css">
+	<script type="text/javascript">
+		//javascript地區，寫淡入淡出的地方
+		function mon(element){element.style.opacity='0.8';}
+		function mout(element){element.style.opacity='1';}
+		function ani(element){element.style.animation='out 3s';}
+	</script>
 </head>
 <body class="whole">
 	
     <div class="head">
-        <div class="flex"><img class="apple" src="logo.PNG"></div>
-        <div class="flex"><h3 class="headfont">Mac</h3></div>
-        <div class="flex"><h3 class="headfont">iPad</h3></div>
-        <div class="flex"><h3 class="headfont">iPhone</h3></div>
-        <div class="flex"><h3 class="headfont">Watch</h3></div>
-        <div class="flex"><h3 class="headfont">TV</h3></div>
-        <div class="flex"><h3 class="headfont">Music</h3></div>
-        <div class="flex"><h3 class="headfont">支援服務</h3></div>
-        <div class="flex"><img class="search" src="search.PNG"></div>
-        <div class="flex"><img class="shop" src="shop.PNG"></div>
+        <div class="flex" onmouseover="mon(this);" onmouseout="mout(this);"><img class="apple" src="logo.PNG" ></div>
+        <div class="flex" onmouseover="mon(this);" onmouseout="mout(this);"><h3 class="headfont">Mac</h3></div>
+        <div class="flex" onmouseover="mon(this);" onmouseout="mout(this);"><h3 class="headfont">iPad</h3></div>
+        <div class="flex" onmouseover="mon(this);" onmouseout="mout(this);"><h3 class="headfont">iPhone</h3></div>
+        <div class="flex" onmouseover="mon(this);" onmouseout="mout(this);"><h3 class="headfont">Watch</h3></div>
+        <div class="flex" onmouseover="mon(this);" onmouseout="mout(this);"><h3 class="headfont">TV</h3></div>
+        <div class="flex" onmouseover="mon(this);" onmouseout="mout(this);"><h3 class="headfont">Music</h3></div>
+        <div class="flex" onmouseover="mon(this);" onmouseout="mout(this);"><h3 class="headfont">支援服務</h3></div>
+        <div class="flex" onmouseover="mon(this);" onmouseout="mout(this);"><img class="search" src="search.PNG"></div>
+        <div class="flex" onmouseover="mon(this);" onmouseout="mout(this);"><img class="shop" src="shop.PNG"></div>
      </div>
-
-    <div class="topic">
-        <div class="topicfont1"><h3>iPhone 12</h3></div>
+	 <div class="topic">
+        <div class="topicfont1" onmouseover="mon(this);" onmouseout="mout(this);"><h3>iPhone 12</h3></div>
 		<div class="topicwhite"></div>
-        <div class="topicfont2"><h6>概覽</h6></div>
-        <div class="topicfont2"><h6>技術規格</h6></div>
-		<div class="topicfont2"><div class="bluebox"><h4 style="color: white;">購買</h4></div></div>
+        <div class="topicfont2" onmouseover="mon(this);" onmouseout="mout(this);"><h6>概覽</h6></div>
+        <div class="topicfont2" onmouseover="mon(this);" onmouseout="mout(this);"><h6>技術規格</h6></div>
+		<div class="topicfont2" onmouseover="mon(this);" onmouseout="mout(this);"><div class="bluebox"><h4 style="color: white;">購買</h4></div></div>
     </div>
 	
     <div class="body">
@@ -164,9 +52,12 @@
 				<h5>換購另享折抵優惠。</h5>
 				<h5>觀看影片</h5>
         </div>
+		<div class="a14" onmouseover="ani(this);"  onmouseout="mout(this);"><img src="a14.jpeg" class="aa14"></div>
         </div>
+		
 		</div>
-	
 		<img class="logo" src="two.png">
+
+		
 </body>
 </html>
